@@ -28,6 +28,140 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+  utter_greet:
+    - text: "أهلا وسهلا"
+
+    utter_goodbye:
+      - text: "مع السلامة"
+
+
+    utter_bot_challenge:
+      - text: "انا لست انسان"
+    utter_faq/book_passenger_age:
+      - text: "يعتبر المسافر رضيعا في حال كان عمره أقل تماما من سنتين, طفلا في حال كان عمره بين سنتين و أقل تماما من12 سنة,  وبالغا في حال عمره 12 سنة أو أكثر."
+
+    utter_faq/book_confirmation:
+      - text: "لا داعي لإعادة الاتصال"
+
+    utter_faq/book_choose_chair:
+      - text: "نعم في أغلب الرحلات. يمكنكم مراجعة مكتب الحجز للاستعلام عن كلفة الخدمة واضافتها."
+
+    utter_faq/book_rewrite_name:
+      - text: "نعم. يتم ذلك من خلال مكتب الحجز المصدر للتذكرة او من خلال مكتب مبيعات أجنحة الشام."
+
+    utter_faq/book_change_name_on_ticket:
+      - text: "لا يمكن."
+    utter_faq/book_unexpected_action:
+      - text: "يجب التواصل مع مكتب الحجز لتعديل تاريخ رحلتكم بأسرع وقت."
+      - text: "يجب التواصل مع مكتب سفركم لالغاء الحجز فورا وتعديله الى التاريخ المطلوب قبل أن يترتب أي غرامات ."
+    utter_faq/book_edit_trip_date:
+      - text: "من خلال مكتب الحجز المصدر للتذكرة او من خلال مكتب مبيعات أجنحة الشام."
+    utter_faq/book_cancel_trip:
+      - text: "من خلال مكتب الحجز المصدر للتذكرة او من خلال مكتب مبيعات أجنحة الشام."
+    utter_faq/bookcoins_types:
+      - text: "يتم الدفع بالليرة السوربة للمسافرين السوريين أو الأجانب الذين لديهم اقامة سنوية صالحة ."
+      - text: "يتم الدفع بالقطع الأجنبي للمسافرين الأجانب أو لأي تذكرة تبدأ من خارج القطر بغض النظر عن جنسبة المسافر"
+
+    utter_faq/book_expire_date:
+      - text: "سنة ميلادية من تاريخ استخدام اول مقطع منها."
+    utter_faq/book_with_point_app:
+      - text: "100 نقطة للراكب عن كل مقطع ذهاب فقط على الدرجة السياحية.
+  200  نقطة للراكب عن كل مقطع ذهاب وإياب على الدرجة السياحية.            
+               نقطة للراكب عن كل مقطع ذهاب فقط بدرجة رجال الأعمال.
+              نقطة للراكب عن كل مقطع ذهاب واياب بدرجة رجال الأعمال.
+              مكافآت برنامج نقاطي :
+            الدرجة السياحية تذكرة ذهاب فقط  1000  
+              الدرجة السياحية تذكرة ذهاب وعودة 2000
+             درجة رجال األعمال تذكرة ذهاب وعودة 4000
+      "
+      - text: "200  نقطة للراكب عن كل مقطع ذهاب وإياب على الدرجة السياحية."
+      - text: "200  نقطة للراكب عن كل مقطع ذهاب فقط بدرجة رجال الأعمال."
+      - text: "400  نقطة للراكب عن كل مقطع ذهاب واياب بدرجة رجال الأعمال."
+      - text: "مكافآت برنامج نقاطي :"
+      - text: "الدرجة السياحية تذكرة ذهاب فقط  1000  "
+      - text: "الدرجة السياحية تذكرة ذهاب وعودة 2000"
+      - text: "درجة رجال األعمال تذكرة ذهاب فقط  2000 "
+      - text: "درجة رجال األعمال تذكرة ذهاب وعودة 4000"
+    utter_faq/book_have_mobile_app:
+      - text: "نعم يمكن تحميله لنظام الاندرويد من متجر غوغل على الرابط و على أجهزة الايفون على الرابط."
+    utter_faq/book_service_receiving_in_airport:
+      - text: "يمكنكم طلب الخدمة بالاتصال على الرقم 0933725690 او 0955611111 ."
+    utter_faq/book_dynamic_chair:
+      - text: "يمكن اضافتها عن طريق المكتب المصدر للتذكرة أو مع قسم المبيعات في أجنحة الشام."
+    utter_faq/book_receiving_hall_airport:
+      - text: "الخدمة متاحة على درجة رجال الاعمال فقط وبالنسبة لوجهة الشارقة و أبوظبي, يجب التواصل مع المكتب المصدر للتذكرة أو مع قسم المبيعات في أجنحة الشام لاضافة الخدمة."
+    utter_faq/book_with_payment_getaway_inside:
+      - text: "نود إعلامكم عن اطلاق خدمة الدفع الالكتروني عن طريق شركة فاتورة، بعد حجز التذكرة من خلال موقعنا الالكتروني www.chamwings.com  حيث أصبح بإمكان المسافرين حجز التذكرة والتسديد أونلاين ببطاقة البنك مباشرة."
+    utter_faq/book_with_payment_getaway_outside:
+      - text: "نعم عبر عدة مواقع منها :  نعم عبر عدة مواقع منها :  http://www.tajawal.com  , https://www.travelfusion.com"
+
+    utter_faq/travel_procedures_book_with_round_trip_when_get_visa:
+      - text: "يمكن للمواطن السوري حجز تذكرة ذهاب فقط إلى طهران, أربيل وبيروت."
+    utter_faq/travel_procedures_time_out_to_trip:
+      - text: "يمكنكم التواصل مع المكتب المصدر للتذكرة او مكتب  مبيعات اجنحة الشام لدفع الغرامات المترتبة ان وجدت وتعديل الحجز."
+    utter_faq/travel_procedures_women_pregnant_time:
+      - text: "يسمح للحامل بالسفر حتى الاسبوع 32 مع تقرير طبي موضحا وضعها وعدد الاسابيع ويكون صالح قبل موعد السفر باسبوع."
+
+
+
+    utter_faq/baggage_policy_wight_person_direct_trip:
+      - text: "30 كيلو مع 7 كيلو حقيبة يد على الدرجة السياحية. "
+      - text: "  كيلو مع 7 كيلو حقيبة يد على درجة رجال الأعمال . "
+      - text: "10كيلو + 7 كيلو حقيبة فقط للرحلات الداخلية."
+
+    utter_faq/baggage_policy_wight_infant:
+      - text: "حقيبة 10 كغ فقط ماعدا الرحلات الداخلية"
+
+    utter_faq/travel_procedures_buy_weight:
+      - text: "الخدمة متاحة لبعض الوجهات فقط وليس جميعها, يجب اضافتها من قبل مكتب الحجز أو مكتب مبيعات اجنحة الشام أو يمكن في المطار ."
+    utter_faq/travel_procedures_lose_damage_baggage:
+      - text: "يجب مراجعة قسم المفقودات في المطار وذلك بشكل مباشر قبل المغادرة."
+    utter_faq/travel_procedures_forbidden_element:
+      - text: "تختلف المواد المحظور نقلها بحسب الوجهة وقوانينها وبشكل عام يمكنكم ان تجدو بعض المواد المحظورة على موقعنا الالكتروني عبر الرابط "
+    utter_faq/travel_procedures_get_pets:
+      - text: "يمكن صعود الحيوانات الاليفة على الطائرة شريطة ان يكون الحجز على الدرجة الاقتصادية مع تطبيق شروط قبول الحيوان الأليف و مع تأكيد ممنوع اصطحاب الحيوانات الى بعض الدول كالامارات والسعودية وسلطنة عمان."
+    utter_faq/travel_procedures_get_musician_machines:
+      - text: "نعم، ولكن بشرط ان تكون حقيبة موسيقية محمولة لا يزيد طولها عن (100 سم) أو (39 بوصة) قطعة واحدة فقط."
+    utter_faq/travel_procedures_deliver_bags_in_transit:
+      - text: "بحسب الوجهة النهائية, يجب التواصل مع مكتب الحجز أو قسم مبيعات اجنحة الشام للتأكد."
+
+    utter_faq/infant_travel:
+      - text: "لا."
+    utter_faq/infant_required_approvals_less_18:
+      - text: "يحتاج تأشيرة خروج  اذا كان مسافر مع أحد والديه اما بالنسبة للاقرباء يحتاج بالاضافة الى تأشيرة الخروج وصاية شرعية صادرة من القاضي الشرعي"
+    utter_faq/infant_meals_presenting:
+      - text: "لا."
+    utter_faq/child_travel_alone:
+      - text: "يجب التواصل مع مكتب الحجز أو قسم المبيعات لاضافة خدمة المرافق
+             يجب تعبئة استمارة تتضمن معلومات منها الشخص الذي سوف يستقبل الطفل في المطار.
+             يتم احتساب كلفة التذكرة لشخص بالغ وليس طفل + رسم خدمة UM
+      "
+      - text: "يجب تعبئة استمارة تتضمن معلومات منها الشخص الذي سوف يستقبل الطفل في المطار."
+      - text: "يتم احتساب كلفة التذكرة لشخص بالغ وليس طفل + رسم خدمة UM"
+    utter_faq/child_meals_presenting:
+      - text: "نعم يتم تقديم وجبات للأطفال."
+    utter_faq/child_using_private_chiar:
+      - text: "لا."
+    utter_faq/child_bed_to_infants:
+      - text: "لا."
+    utter_faq/general_questions_career:
+      - text: "يمكنكم ارسال سيرتكم الذاتية الى قسم الموارد البشرية على العنوان HumanResources@chamwings.com"
+    utter_faq/general_questions_goods_shipment:
+      - text: "نعم يرجى التواصل مع قسم الشحن على الهاتف 9812 تحويلة 430 أو 434 "
+    utter_faq/general_questions_visa_tourism:
+      - text: "نعم الى دولة الامارات  العربية المتحدة مع تذكرة السفر 
+  التواصل على الهاتف 011-8011 تحويلة 305/303 "
+    utter_faq/general_questions_communicatio:
+      - text: "عن طريق:"
+      - text: "مركز الاتصال 00963-11-9211"
+      - text: "البريد الالكتروني CS@chamwings.com"
+      - text: "WhatsApp 00963-992878787"
+      - text: "احدى مواقع التواصل الاجتماعي: "
+      - text: "https://www.facebook.com/profile.php?id=100070236631521"
+      - text: "https://www.instagram.com/"
+      - text: "https://twitter.com/ChamWings"
+      - text: "https://www.linkedin.com/company/1527596/admin/"
+      - text: "https://www.youtube.com/channel/UCWgYrSAezmEt2UYCer4PHFg"
 
 session_config:
   session_expiration_time: 60

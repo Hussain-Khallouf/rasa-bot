@@ -1,91 +1,306 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - intent: greet
+      examples: |
+      - صباح الخير
+      - مساء الخير
+      - السلام عليكم
+      - مرحبا
+
+  - intent: goodbye
+    examples: |
+      - باي
+      - مع السلامة
+      - بدك شي
+
+  - intent: faq_book_passenger_age
+    examples: |
+      -    متى يعتبر المسافررضيعا أو طفلا أو بالغا؟
+      -    متى يعتبر المسافررضيعا  أو بالغا؟
+      -    متى يعتبر المسافر أو طفلا أو بالغا؟
+      -    متى يعتبر المسافررضيعا أو طفلا ؟
+      -    متى يعتبر المسافررضيعا ؟
+      -    متى يعتبر المسافر  طفلا؟
+      -    متى يعتبر المسافر  بالغا؟
+
+  - intent: faq_book_confirmation
+    examples: |
+      -    هل أحتاج إلى الاتصال بكم لإعادة تأكيد رحلتي
+      -    هل يجب تأكيد رحلتي
+      -    هل من الضروري التواصل لتأكيد رحلتي
+
+  - intent: faq_book_choose_chair
+    examples: |
+      -   هل يمكنني اختيار مقعد مخصص لي خلال رحلة الطيران؟
+      -   هل يمكنني تخصيص مقعد في رحلة الطيران؟
+
+  - intent: faq_book_rewrite_name
+    examples: |
+      -   هل يجب تعديل الإسم على التذكرة في حال وجود خطأ كتابي في الاسم؟
+      -   هل يجب تعديل الإسم على التذكرة في حال وجود خطأ في الاسم؟
+      -   هل يجب تعديل الإسم على التذكرة؟
+
+  - intent: faq_book_change_name_on_ticket
+    examples: |
+      -   هل يمكنني تغيير الإسم على التذكرة الى اسم شخص آخر؟
+
+  - intent: faq_book_unexpected_action
+    examples: |
+      -   حدث شيء ما غير متوقع وأصبحت غير قادر على السفر، فماذا أفعل؟
+      -   لم يعد لدي قدرة على السفر ، ما هو الحل؟
+
+  - intent: faq_book_edit_trip_date
+    examples: |
+      -   كيف يمكنني  تعديل تاريخ الحجز الخاص بي
+      -   هل من الممكن  تعديل تاريخ الحجز الخاص بي
+
+  - intent: faq_book_cancel_trip
+    examples: |
+      -   كيف يمكنني الغاء الحجز لرحلتي؟
+      -  اريد الغاء الحجز لرحلتي
+
+  #- intent: faq_book_coins_types
+  #  examples: |
+  #    -    ما هي العملات التي يمكن دفع ثمن التذكرة بها؟
+
+  - intent: faq_book_expire_date
+    examples: |
+      -   ما هي مدة صلاحية تذكرتي؟
+      -   ما يمكنني معرفة صلاحية تذكرتي؟
+
+  - intent: faq_book_with_point_app
+    examples: |
+      -    كيف يمكنني حجز رحلة باستخدام برنامج السفر نقاطي؟
+      -    كيف يمكنني انشاء حجز رحلة من خلال برنامج السفر نقاطي؟
+      -    كيف يمكنني انشاء حجز رحلة من خلال برنامج  نقاطي؟
+
+  - intent: faq_book_have_mobile_app
+    examples: |
+      -   هل لديكم تطبيق خاص بالجوال؟
+      -   اريد رابط تحميل تطبيق الجوال؟
+
+  - intent: faq_book_service_receiving_in_airport
+    examples: |
+      -   كيف يمكنني حجز خدمة الاستقبال في المطار؟
+
+  - intent: faq_book_dynamic_chair
+    examples: |
+      -   كيف يمكنني طلب كرسي متحرك؟
+
+  - intent: faq_book_receiving_hall_airport
+    examples: |
+      -   هل يتم استقبالي في قاعة الشرف الموجودة في المطار؟
+
+  - intent: faq_book_with_payment_getaway_inside
+    examples: |
+      -   هل يمكنني الحجز والدفع عبر الانترنت داخل سوريا؟
+      -   هل يمكنني الحجز والدفع عبر الانترنت؟
+
+  - intent: faq_book_with_payment_getaway_outside
+    examples: |
+      -   هل يمكنني الحجز والدفع عبر الانترنت خارج سوريا؟
+
+
+  - intent: faq_travel_procedures_book_with_round_trip_when_get_visa
+    examples: |
+      -   هل يسمح لي بالحجز والسفر ذهاب فقط عند الحصول على تأشيرة؟
+
+  - intent: faq_travel_procedures_time_out_to_trip
+    examples: |
+      -   ماذا يحدث إن لم أتمكن من اللحاق برحلتي الجوية؟
+      -   ماذا يحدث إنتأخرت على موعد رحلتي ؟
+
+  - intent: faq_travel_procedures_women_pregnant_time
+    examples: |
+      -   ما هي الفترة المسموح بها للحامل للسفر معنا؟
+
+  - intent: faq_baggage_policy_wight_person_direct_trip
+    examples: |
+      -   ما هو الوزن المسموح به للشخص البالغ والطفل في الرحلات المباشرة؟
+      -   ما هو الوزن المسموح به للشخص الطفل في الرحلات المباشرة؟
+      -   ما هو الوزن المسموح به للشخص البالغ  في الرحلات المباشرة؟
+
+  - intent: faq_baggage_policy_wight_infant
+    examples: |
+      -   ما هو الوزن المسموح به للرضيع في الرحلات المباشرة؟
+
+  - intent: faq_travel_procedures_buy_weight
+    examples: |
+      -   كيف يمكنني شراء حقيبة اضافية بوزن محدد مسبقا؟
+      -   كيف يمكنني شراء وزن محدد مسبقا؟
+
+  - intent: faq_travel_procedures_lose_damage_baggage
+    examples: |
+      -   كيف يمكنني الإبلاغ عن الأمتعة المفقودة أو التي تعرضت للأذى؟
+      -   كيف يمكنني الإبلاغ عن التي تعرضت للأذى؟
+      -   كيف يمكنني الإبلاغ عن الأمتعة المفقودة ؟
+
+  - intent: faq_travel_procedures_forbidden_element
+    examples: |
+      -   ما هي العناصر الممنوعة على متن الطائرة؟
+      -  هل يوجد اشياء يمنع اصطحابها على متن الطائرة؟
+
+  - intent: faq_travel_procedures_get_pets
+    examples: |
+      -   هل يمكنني إحضار حيوانات أليفة على متن الطائرة؟
+      -   هل يمكنني إحضار حيوانات على متن الطائرة؟
+
+  - intent: faq_travel_procedures_get_musician_machines
+    examples: |
+      -   هل يمكنني نقل آلات موسيقية ؟
+      -   هل يمكنني نقل آلات تخص الموسيقا ؟
+
+  - intent: faq_travel_procedures_deliver_bags_in_transit
+    examples: |
+      -   هل تصل حقائبي إلى وجهتي النهائية حتى لو كانت الرحلة ترانزيت؟
+      -   هل تصل حقائبي حتى لو كانت الرحلة ترانزيت؟
+
+
+  - intent: faq_infant_travel
+    examples: |
+      -   هل يسمح للرضيع بالسفر لوحده على متن أجنحة الشام ؟
+      -   هل يسمح للرضيع بالسفر لوحده ؟
+
+  - intent: faq_infant_required_approvals_less_18
+    examples: |
+      -   ما هي الموافقات المطلوبة للمسافر الذي عمره اقل من 18 سنة عند سفره مع  أقاربه أو أحد والديه؟
+      -   ما هي الموافقات المطلوبة للمسافر الذي عمره اقل من 18 سنة عند سفره مع أحد والديه؟
+      -   ما هي الموافقات المطلوبة للمسافر الذي عمره اقل من 18 سنة عند سفره مع  أقاربه؟
+
+  - intent: faq_infant_meals_presenting
+    examples: |
+      -   هل يتم تقديم وجبات للرضيع؟
+
+  - intent: faq_child_travel_alone
+    examples: |
+      -   هل يسمح للطفل بالسفر لوحده دون شخص بالغ على متن أجنحة الشام ؟
+      -   هل يسمح للطفل بالسفر لوحده دون شخص بالغ ؟
+
+  - intent: faq_child_meals_presenting
+    examples: |
+      -   هل يتم تقديم وجبات خاصة بالاطفال ؟
+      -   هل يتم تقديم وجبات بالاطفال ؟
+
+  - intent: faq_child_using_private_chiar
+    examples: |
+      -   هل يمكنني استخدام مقعد طفلي الخاص بالسيارة على متن الطائرة؟
+      -   هل يمكنني استخدام مقعدخاص لطفلي على متن الطائرة؟
+      -   هل يمكنني استخدام مقعدخاص لطفلي في الطائرة؟
+
+  - intent: faq_child_bed_to_infants
+    examples: |
+      -   هل يوجد سرير خاص بالأطفال على متن الطائرة؟
+      -   هل يوجد سرير بالأطفال في الطائرة؟
+
+
+
+  - intent: faq_general_questions_career
+    examples: |
+      -   كيف يمكنني التقدم للعمل في اجنحة الشام؟
+      -   كيف يمكنني التقدم للعمل لديكم؟
+      -   كيف يمكنني التقدم لوظيفة عمل في اجنحة الشام؟
+      -   كيف يمكنني التقدم لوظيفة عمل؟
+
+  - intent: faq_general_questions_goods_shipment
+    examples: |
+      -   هل لديكم خدمة شحن مستندات أو بضائع 
+      -   هل لديكم خدمة شحن مستندات  
+      -   هل لديكم خدمة شحن  بضائع 
+
+  - intent: faq_general_questions_visa_tourism
+    examples: |
+      -   هل لديكم خدمة اصدار تأشيرات سياحية ؟
+
+#- intent: faq_general_questions_communication
+#  examples: |
+#    -   كيف يمكنني التواصل مع أجنحة الشام للطيران؟
+

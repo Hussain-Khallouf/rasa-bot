@@ -1,13 +1,16 @@
 version: "3.1"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - change_book_inquiry
+  - ticket_price_inquiry
+  - flight_schedules_inquiry
+  - weight_inquiry
+  - change_book_cost_inquiry
+  - flight_info_inquiry
+  - book_flight
+  - shipping_inquiry
+  - agency_contact_inquiry
+
 
 responses:
   utter_greet:

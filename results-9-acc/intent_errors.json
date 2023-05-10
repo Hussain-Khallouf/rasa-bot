@@ -1,0 +1,170 @@
+[
+  {
+    "text": "في حجز رحلة من مسقط الى دمشق يوم الجمعة ٢٧ الشهر",
+    "intent": "booking_availablity",
+    "intent_prediction": {
+      "name": "flight_info_inquiry",
+      "confidence": 0.5943343043327332
+    }
+  },
+  {
+    "text": "لوحابب احجز من الدوحه عحلب في حجز",
+    "intent": "booking_availablity",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.7563358545303345
+    }
+  },
+  {
+    "text": "هل يوجد حجز مباشر من الرياض الى دمشق",
+    "intent": "booking_availablity",
+    "intent_prediction": {
+      "name": "flight_schedules_inquiry",
+      "confidence": 0.7004391551017761
+    }
+  },
+  {
+    "text": "لوسمحتوا في حجز من موسكو على مطار اللاذقية؟",
+    "intent": "booking_availablity",
+    "intent_prediction": {
+      "name": "flight_info_inquiry",
+      "confidence": 0.6993939876556396
+    }
+  },
+  {
+    "text": "كيف فيني احجز",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "change_book_inquiry",
+      "confidence": 0.4175959527492523
+    }
+  },
+  {
+    "text": "السلام عليكم لدي سؤال بعد اذنكم كيف يمكنني حجز في شركتكم الى دمشق او حلب علما انني الان مقيم في بلجيكا الرجاء منكم اعطائي بعض الارشادات للحجز تحياتي لكم و الى جميع العامليت معكم",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "change_book_inquiry",
+      "confidence": 0.28623536229133606
+    }
+  },
+  {
+    "text": "بدي احجز من السعودية لدمشق شلون",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.8960673809051514
+    }
+  },
+  {
+    "text": "كيف ممكن احجز من ابوظبي الى دمشق",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.6770075559616089
+    }
+  },
+  {
+    "text": "كيفية الحجز",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "change_book_inquiry",
+      "confidence": 0.49543508887290955
+    }
+  },
+  {
+    "text": "لو سمحتو طريقة الحجز من الرياض الى دمشق",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "booking_availablity",
+      "confidence": 0.3709483742713928
+    }
+  },
+  {
+    "text": "لو سمحتم اذا اردت تبديل الحجز من الكويت لدمشق من ١٧ فبراير لل٢٤ فبراير هل تكلف اكثر من ١٠ دينار",
+    "intent": "change_book_cost_inquiry",
+    "intent_prediction": {
+      "name": "change_book_inquiry",
+      "confidence": 0.4180547595024109
+    }
+  },
+  {
+    "text": "كم الغرامة على تعديل حجز الطيران موعد 27الشهر الحالي الفيزا صالحة لموعد 4/5",
+    "intent": "change_book_cost_inquiry",
+    "intent_prediction": {
+      "name": "ticket_price_inquiry",
+      "confidence": 0.9173150658607483
+    }
+  },
+  {
+    "text": "عندي استفسار انا حجزت رحلة علامارات شهر القادم بحسن غير موعد الرحلة ؟",
+    "intent": "change_book_inquiry",
+    "intent_prediction": {
+      "name": "flight_info_inquiry",
+      "confidence": 0.8133769631385803
+    }
+  },
+  {
+    "text": "لو عطيتكم رقم الحجز، ما بيصير تغيرو الموعد من هندكم ؟ انا بالامارات وفي ضرف طارئ لازم ارجع للشام",
+    "intent": "change_book_inquiry",
+    "intent_prediction": {
+      "name": "flight_info_inquiry",
+      "confidence": 0.5355598330497742
+    }
+  },
+  {
+    "text": "عندي في حجزي في حرف فالكنية نكتب غلط ممكن نعدلو",
+    "intent": "change_book_inquiry",
+    "intent_prediction": {
+      "name": "flight_info_inquiry",
+      "confidence": 0.9589005708694458
+    }
+  },
+  {
+    "text": "لو سمحتو بدي اعرف ايمت في اقرب حجز من دمشق الي مسقط",
+    "intent": "flight_schedules_inquiry",
+    "intent_prediction": {
+      "name": "booking_availablity",
+      "confidence": 0.5432783365249634
+    }
+  },
+  {
+    "text": "في حجز عالبحرين",
+    "intent": "flight_schedules_inquiry",
+    "intent_prediction": {
+      "name": "booking_availablity",
+      "confidence": 0.757507860660553
+    }
+  },
+  {
+    "text": "مرحبا لو سمحتو بدي اسال شوفي رحلات بي ٦ او ٧ نيسان من دبي لشام والرجعة بي ٢٦ او ٢٧ الشهر",
+    "intent": "flight_schedules_inquiry",
+    "intent_prediction": {
+      "name": "flight_info_inquiry",
+      "confidence": 0.8118098974227905
+    }
+  },
+  {
+    "text": "ثمن  تزكرة  في هدا تاريخ لو سمحت 3/2/2023",
+    "intent": "ticket_price_inquiry",
+    "intent_prediction": {
+      "name": "flight_info_inquiry",
+      "confidence": 0.5354717373847961
+    }
+  },
+  {
+    "text": "بدی تذکر ایاب وذهاب  من طهران الی دمشق",
+    "intent": "book_flight",
+    "intent_prediction": {
+      "name": "flight_schedules_inquiry",
+      "confidence": 0.9433966875076294
+    }
+  },
+  {
+    "text": "اريد التاكد من حجز رقم الحجز WU0WUP",
+    "intent": "flight_info_inquiry",
+    "intent_prediction": {
+      "name": "change_book_inquiry",
+      "confidence": 0.402094304561615
+    }
+  }
+]

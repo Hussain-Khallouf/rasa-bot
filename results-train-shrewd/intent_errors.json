@@ -1,0 +1,138 @@
+[
+  {
+    "text": "كيف ممكن احجز بطاقات طيران ذهاب اياب من الكويت لدمشق اونلاين؟",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.6415716409683228
+    }
+  },
+  {
+    "text": "كيف فيني احجز",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "change_book_inquiry",
+      "confidence": 0.3361649513244629
+    }
+  },
+  {
+    "text": "مرحبا لو سمحتو أنا بجدة وبدي احجز عن طريقكم لأنزل ع الشام شو الطريقة",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.6476431488990784
+    }
+  },
+  {
+    "text": "كيف ممكن احجز من ابوظبي الى دمشق",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.7641066312789917
+    }
+  },
+  {
+    "text": "فيني اشتري تكت ل 3اشخاص اونلاين",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.6284253597259521
+    }
+  },
+  {
+    "text": "بدي احجز من السعودية لدمشق شلون",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.7856778502464294
+    }
+  },
+  {
+    "text": "كيفية الحجز",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "change_book_inquiry",
+      "confidence": 0.2301187664270401
+    }
+  },
+  {
+    "text": "أنا سوري موجود بطهران كيف بدي احجز على دمشق",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.6678314805030823
+    }
+  },
+  {
+    "text": "كيف بدي احجز من المانيا",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.682776927947998
+    }
+  },
+  {
+    "text": "انا بالبحرين بغيت اشتري تذكره من الكويت الى دمشق شنو الطريقه",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.538027286529541
+    }
+  },
+  {
+    "text": "عندي حجز بتاريخ 12-2 قدر أعرف اديش تكلفة تأجيل الحجز؟",
+    "intent": "change_book_cost_inquiry",
+    "intent_prediction": {
+      "name": "ticket_price_inquiry",
+      "confidence": 0.5805513858795166
+    }
+  },
+  {
+    "text": "هل يوجد حجز من مسقط الى حلب وبالعكس",
+    "intent": "booking_availablity",
+    "intent_prediction": {
+      "name": "flight_schedules_inquiry",
+      "confidence": 0.748874843120575
+    }
+  },
+  {
+    "text": "لوحابب احجز من الدوحه عحلب في حجز",
+    "intent": "booking_availablity",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.7536987662315369
+    }
+  },
+  {
+    "text": "لو سمحت بدي تعطيني ساعات السفر من دمشق الى الرياض",
+    "intent": "flight_info_inquiry",
+    "intent_prediction": {
+      "name": "ticket_price_inquiry",
+      "confidence": 0.3207852840423584
+    }
+  },
+  {
+    "text": "السلام عليكم لدي سؤال بعد اذنكم كيف يمكنني حجز في شركتكم الى دمشق او حلب علما انني الان مقيم في بلجيكا الرجاء منكم اعطائي بعض الارشادات للحجز تحياتي لكم و الى جميع العامليت معكم",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "flight_info_inquiry",
+      "confidence": 0.2993883788585663
+    }
+  },
+  {
+    "text": "كيف بدي احجز لاربيل ذهاب فقط",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.71502286195755
+    }
+  },
+  {
+    "text": "لو سمحتو طريقة الحجز من الرياض الى دمشق",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "booking_availablity",
+      "confidence": 0.4426574409008026
+    }
+  }
+]

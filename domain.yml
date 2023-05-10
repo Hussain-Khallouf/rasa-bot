@@ -1,34 +1,16 @@
 version: "3.1"
 
 intents:
-  - change_book_inquiry
-  - ticket_price_inquiry
-  - flight_schedules_inquiry
-  - weight_inquiry
+  - booking_availablity
+  - booking_methods
   - change_book_cost_inquiry
-  - flight_info_inquiry
+  - change_book_inquiry
+  - flight_schedules_inquiry
+  - ticket_price_inquiry
   - book_flight
-  - shipping_inquiry
-  - agency_contact_inquiry
-
+  - flight_info_inquiry
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 

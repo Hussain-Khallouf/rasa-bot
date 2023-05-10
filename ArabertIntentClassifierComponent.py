@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 
 @DefaultV1Recipe.register(
-    DefaultV1Recipe.ComponentType.INTENT_CLASSIFIER, is_trainable=False
+    DefaultV1Recipe.ComponentType.INTENT_CLASSIFIER, is_trainable=True
 )
 class CustomArabertClassifier(IntentClassifier, GraphComponent):
     @classmethod
@@ -36,7 +36,7 @@ class CustomArabertClassifier(IntentClassifier, GraphComponent):
     def get_default_config() -> Dict[Text, Any]:
         return {
             "epochs": 10,
-            "class_num": 9,
+            "class_num": 8,
             "model_name": 'aubmindlab/bert-base-arabertv2'
         }
 
@@ -48,31 +48,30 @@ class CustomArabertClassifier(IntentClassifier, GraphComponent):
             resource: Resource,
     ) -> None:
         self.name = name
-        self.CLASS_NUM = config.get("class_num", 9)
+        self.CLASS_NUM = config.get("class_num", 8)
         self.EPOCHS = config.get("epochs", 10)
         self.MODEL_NAME = config.get("model_name", 'aubmindlab/bert-base-arabertv2')
 
         self._model_storage = model_storage
         self._resource = resource
 
-        self.MAX_LENGHT = 32
+        self.MAX_LENGHT = 35
 
         self.intents = [
-            "flight_schedules_inquiry",
-            "ticket_price_inquiry",
-            "flight_info_inquiry",
-            "agency_contact_inquiry",
-            "weight_inquiry",
-            "book_flight",
-            "shipping_inquiry",
-            "change_book_cost_inquiry",
-            "change_book_inquiry"
+            'booking_availablity',
+            'booking_methods',
+            'change_book_cost_inquiry',
+            'change_book_inquiry',
+            'flight_schedules_inquiry',
+            'ticket_price_inquiry',
+            'book_flight',
+            'flight_info_inquiry'
         ]
 
-        tf.random.set_seed(42)
+        # tf.random.set_seed(42)
         self.bert_tokenizer = BertTokenizer.from_pretrained(self.MODEL_NAME)
         config = BertConfig.from_pretrained(self.MODEL_NAME, output_hidden_states=False)
-        bert = TFBertModel.from_pretrained(self.MODEL_NAME, config=config, from_pt=True, trainable=False)
+        bert = TFBertModel.from_pretrained(self.MODEL_NAME, config=config, from_pt=True, trainable=True)
         input_text = tf.keras.Input(shape=(self.MAX_LENGHT,), dtype=tf.int32, name="input")
 
         bert_output = bert(input_text)
@@ -169,13 +168,21 @@ class CustomArabertClassifier(IntentClassifier, GraphComponent):
     ) -> GraphComponent:
 
         with model_storage.read_from(resource) as model_dir:
-            loaded_model = tf.keras.models.load_model(model_dir / f"{resource.name}.h5",custom_objects={'TFBertModel': TFBertModel})
+            loaded_model = tf.keras.models.load_model(model_dir / f"{resource.name}.h5",
+                                                      custom_objects={'TFBertModel': TFBertModel})
 
-        # loaded_model = tf.keras.models.load_model(
-        #     'models/nlu-20230430-135555-largo-soldier/components/train_ArabertIntentClassifierComponent_old.CustomArabertClassifier3/train_ArabertIntentClassifierComponent_old.CustomArabertClassifier3.h5',
-        #     custom_objects={'TFBertModel': TFBertModel})
+            # loaded_model = tf.keras.models.load_model(
+            #     'models/9_acc.h5',
+            #     compile=False,
+            #     custom_objects={'TFBertModel': TFBertModel})
+            # loss = tf.keras.losses.SparseCategoricalCrossentropy()
+            # metrics = tf.keras.metrics.SparseCategoricalAccuracy(name="acc")
+            #
+            # loaded_model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=5e-6),
+            #                      loss=loss,
+            #                      metrics=metrics
+            #                      )
 
-            config["model_name"] = 'aubmindlab/bert-base-arabertv2'
             component = cls(
                 config, execution_context.node_name, model_storage, resource
             )

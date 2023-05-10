@@ -1,0 +1,26 @@
+[
+  {
+    "text": "كيف بدي احجز لاربيل ذهاب فقط",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "book_flight",
+      "confidence": 0.71502286195755
+    }
+  },
+  {
+    "text": "لو سمحتو طريقة الحجز من الرياض الى دمشق",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "booking_availablity",
+      "confidence": 0.4426574409008026
+    }
+  },
+  {
+    "text": "السلام عليكم لدي سؤال بعد اذنكم كيف يمكنني حجز في شركتكم الى دمشق او حلب علما انني الان مقيم في بلجيكا الرجاء منكم اعطائي بعض الارشادات للحجز تحياتي لكم و الى جميع العامليت معكم",
+    "intent": "booking_methods",
+    "intent_prediction": {
+      "name": "flight_info_inquiry",
+      "confidence": 0.2993883788585663
+    }
+  }
+]

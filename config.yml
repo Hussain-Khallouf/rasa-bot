@@ -3,12 +3,14 @@ recipe: default.v1
 
 language: ar
 
+#aubmindlab/bert-base-arabertv02-twitter
+
 pipeline:
    - name: ArabertPreprocessorComponent.CustomArabertPreprocessor
-     model_name: "aubmindlab/bert-base-arabertv2"
+     model_name: "aubmindlab/bert-base-arabertv02-twitter"
 
    - name: ArabertTokenizerComponent.CustomAraBertTokenizer
-     model_name: "aubmindlab/bert-base-arabertv2"
+     model_name: "aubmindlab/bert-base-arabertv02-twitter"
      max_length: 32
 
    - name: LanguageModelFeaturizer
@@ -17,8 +19,8 @@ pipeline:
      cache_dir: null
 
    - name: ArabertIntentClassifierComponent.CustomArabertClassifier
-     epochs: 10
-     model_name: "aubmindlab/bert-base-arabertv2"
+     epochs: 20
+     model_name: "aubmindlab/bert-base-arabertv02-twitter"
 
    - name: EntitySynonymMapper
    - name: ResponseSelector
